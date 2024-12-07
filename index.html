@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Главная страница - Houzzy</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+          <a class="header__logo-link" href="#" aria-label="Ссылка на главную страницу">
+            <svg class="header__logo-icon" width="110" height="40" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#logo-houzzy"></use>
+            </svg>
+          </a>
+          
+          <div class="header__nav-wrapper">
+            <nav class="main-nav">
+              <ul class="main-nav__list">
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="#">Каталог</a>
+                </li>
+                <li class="main-nav__item"
+                ><a class="main-nav__link" href="#">Акции</a>
+              </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="#">Отзывы</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="#">Доставка</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="#">Оплата</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="#">События</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="#">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <a class="header__nav-link" href="tel:+78000000000">
+              <svg class="header__nav-icon" width="20" height="20" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-phone"></use>
+              </svg>
+              <span>8 (800) 000-00-00</span>
+            </a>
+          </div>
+          <div class="header__user-list">
+            <a class="header__user-link" href="#" aria-label="Ссылка на поиск">
+              <svg class="header__user-icon" width="24" height="24" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-search"></use>
+              </svg>
+            </a>
+            <a class="header__user-link" href="#" aria-label="Ссылка на Избранное">
+              <span class="header__user-info">20</span>
+              <svg class="header__user-icon" width="24" height="24" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-heart"></use>
+              </svg>
+            </a>
+            <a class="header__user-link header__user-link" href="#" aria-label="Ссылка на Корзину">
+              <span class="header__user-info">7</span>
+              <svg class="header__user-icon" width="24" height="24" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-bag"></use>
+              </svg>
+            </a>
+            <a class="header__user-link" href="tel:88000000000" aria-label="Ссылка на телефон">
+              <svg class="header__user-icon" width="24" height="24" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-phone"></use>
+              </svg>
+            </a>
+          </div>
+          <button class="header__burger" type="button" aria-label="Кнопка открытия и закрытия мобильного меню">
+            <svg class="header__burger-icon" width="32" height="32" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-burger"></use>
+            </svg>
+            <svg class="header__burger-icon" width="32" height="32" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-exit"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <h1 class="visually-hidden">Дизайнерская мебель</h1>
+        <div class="hero__wrapper">
+          <picture>
+            <source media="(max-width: 767px)" srcset="images/hero/hero-bg-mobile.jpg, images/hero/hero-bg-mobile@2x.jpg 2x">
+            <source media="(max-width: 1023px)" srcset="images/hero/hero-bg-tablet.jpg, images/hero/hero-bg-tablet@2x.jpg 2x">
+            <img class="hero__img" src="images/hero/hero-bg-desctop.jpg" srcset="images/hero/hero-bg-desctop@2x.jpg 2x" alt="Изображение категории" width="1920" height="828">
+          </picture>
+          <ul class="hero__list">
+            <li class="hero__item">
+              <a class="circle-link" href="#" aria-label="Открыть товар">
+                <svg class="circle-link__icon" width="20" height="20" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-plus"></use>
+                </svg>
+              </a>
+          </li>
+            <li class="hero__item">
+              <a class="circle-link" href="#" aria-label="Открыть товар">
+                <svg class="circle-link__icon" width="20" height="20" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-plus"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="hero__item">
+              <a class="circle-link" href="#" aria-label="Открыть товар">
+                <svg class="circle-link__icon" width="20" height="20" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-plus"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="hero__item">
+              <a class="circle-link" href="#" aria-label="Открыть товар">
+                <svg class="circle-link__icon" width="20" height="20" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-plus"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="about">
+        <div class="container">
+          <div class="about__wrapper">
+            <ul class="about__category-list">
+              <li class="about__item">
+                <div class="about__item-wrap">
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="images/about/image-1-mobile.jpg, images/about/image-1-mobile@2x.jpg 2x">
+                    <source media="(max-width: 1023px)" srcset="images/about/image-1-tablet.jpg, images/about/image-1-tablet@2x.jpg 2x">
+                    <img class="about__img" width="321" height="461" src="images/about/image-1-desctop.jpg" srcset="images/about/image-1-desctop@2x.jpg 2x" alt="Изображение комфортабельной мебели">
+                  </picture>
+                  <span class="about__label">Уют для дома</span>
+                </div>
+              </li>
+              <li class="about__item">
+                <div class="about__item-wrap">
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="images/about/image-2-mobile.jpg, images/about/image-2-mobile@2x.jpg 2x">
+                    <source media="(max-width: 1023px)" srcset="images/about/image-2-tablet.jpg, images/about/image-2-tablet@2x.jpg 2x">
+                    <img class="about__img" width="320" height="228" src="images/about/image-2-desctop.jpg" srcset="images/about/image-2-desctop@2x.jpg 2x" alt="Изображение комфортабельной мебели">
+                  </picture>
+                  <span class="about__label">Декор для дома</span>
+                </div>
+              </li>
+              <li class="about__item">
+                <div class="about__item-wrap">
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="images/about/image-3-mobile.jpg, images/about/image-3-mobile@2x.jpg 2x">
+                    <source media="(max-width: 1023px)" srcset="images/about/image-3-tablet.jpg, images/about/image-3-tablet@2x.jpg 2x">
+                    <img class="about__img" width="320" height="180" src="images/about/image-3-desctop.jpg" srcset="images/about/image-3-desctop@2x.jpg 2x" alt="Изображение комфортабельной мебели">
+                  </picture>
+                  <span class="about__label">Мебель для животных</span>
+                </div>
+              </li>
+            </ul>
+            <div class="about__inner">
+              <h2 class="about__title">Комфортабельный</h2>
+              <p class="about__text">
+                Houzzy&nbsp;&mdash; это место, где каждая деталь создана с&nbsp;любовью и&nbsp;заботой, чтобы принести тепло и&nbsp;уют в&nbsp;ваш дом. Мы&nbsp;уверены, что красивая и&nbsp;комфортабельная мебель способна создавать особенную атмосферу, наполнять пространство гармонией и&nbsp;радостью. У&nbsp;нас только лучшее качество мебели, которое прослужит долгие годы и&nbsp;будет приносить радость и&nbsp;удовольствие каждый день. Мы&nbsp;заботимся о&nbsp;каждом покупателе.
+              </p>
+              <a href="#" class="about__link btn">Перейти в каталог</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="banner">
+        <div class="container">
+          <div class="banner__wrapper">
+            <p class="banner__inner">
+              <span class="banner__main-text">Уютный</span>
+              <span class="banner__secondary-text">для вашего дома</span>
+            </p>
+            <a class="banner__link btn btn--dark" href="#">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <section class="popular">
+        <div class="container">
+          <h2 class="popular__title title">Популярный</h2>
+          <ul class="popular__list">
+            <li class="popular__item">
+              <a class="popular__link" href="#">
+                <div class="popular__category">
+                  <h3 class="popular__category-title">Диваны</h3>
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="images/popular/category-1-mobile.jpg, images/popular/category-1-mobile@2x.jpg 2x">
+                    <source media="(max-width: 1023px)" srcset="images/popular/category-1-tablet.jpg, images/popular/category-1-tablet@2x.jpg 2x">
+                    <img class="popular__category-img" src="images/popular/category-1-desctop.jpg" srcset="images/popular/category-1-desctop@2x.jpg 2x" alt="Изображение категории" width="338" height="280">
+                  </picture>
+                </div>
+                <svg class="popular__link-icon" width="28" height="28" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-plus"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="popular__item">
+              <a class="popular__link" href="#">
+                <div class="popular__category">
+                  <h3 class="popular__category-title">Столы</h3>
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="images/popular/category-2-mobile.jpg, images/popular/category-2-mobile@2x.jpg 2x">
+                    <source media="(max-width: 1023px)" srcset="images/popular/category-2-tablet.jpg, images/popular/category-2-tablet@2x.jpg 2x">
+                    <img class="popular__category-img" src="images/popular/category-2-desctop.jpg" srcset="images/popular/category-2-desctop@2x.jpg 2x" alt="Изображение категории" width="338" height="280">
+                  </picture>
+                </div>
+                <svg class="popular__link-icon" width="28" height="28" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-plus"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="popular__item">
+              <a class="popular__link" href="#">
+                <div class="popular__category">
+                  <h3 class="popular__category-title">Стулья</h3>
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="images/popular/category-3-mobile.jpg, images/popular/category-3-mobile@2x.jpg 2x">
+                    <source media="(max-width: 1023px)" srcset="images/popular/category-3-tablet.jpg, images/popular/category-3-tablet@2x.jpg 2x">
+                    <img class="popular__category-img" src="images/popular/category-3-desctop.jpg" srcset="images/popular/category-3-desctop@2x.jpg 2x" alt="Изображение категории" width="338" height="280">
+                  </picture>
+                </div>
+                <svg class="popular__link-icon" width="28" height="28" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-plus"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="popular__item">
+              <a class="popular__link" href="#">
+                <div class="popular__category">
+                  <h3 class="popular__category-title">Home Decor</h3>
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="images/popular/category-4-mobile.jpg, images/popular/category-4-mobile@2x.jpg 2x">
+                    <source media="(max-width: 1023px)" srcset="images/popular/category-4-tablet.jpg, images/popular/category-4-tablet@2x.jpg 2x">
+                    <img class="popular__category-img" src="images/popular/category-4-desctop.jpg" srcset="images/popular/category-4-desctop@2x.jpg 2x" alt="Изображение категории" width="338" height="280">
+                  </picture>
+                </div>
+                <svg class="popular__link-icon" width="28" height="28" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-plus"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="popular__item popular__item--wide">
+              <a class="popular__link" href="#">
+                <div class="popular__category">
+                  <h3 class="popular__category-title">Кровати</h3>
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="images/popular/category-5-mobile.jpg, images/popular/category-5-mobile@2x.jpg 2x">
+                    <source media="(max-width: 1023px)" srcset="images/popular/category-5-tablet.jpg, images/popular/category-5-tablet@2x.jpg 2x">
+                    <img class="popular__category-img" src="images/popular/category-5-desctop.jpg" srcset="images/popular/category-5-desctop@2x.jpg 2x" alt="Изображение категории" width="692" height="240">
+                  </picture>
+                </div>
+                <svg class="popular__link-icon" width="28" height="28" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-plus"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="popular__item popular__item--wide">
+              <a class="popular__link" href="#">
+                <div class="popular__category">
+                  <h3 class="popular__category-title">Кресла</h3>
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="images/popular/category-6-mobile.jpg, images/popular/category-6-mobile@2x.jpg 2x">
+                    <source media="(max-width: 1023px)" srcset="images/popular/category-6-tablet.jpg, images/popular/category-6-tablet@2x.jpg 2x">
+                    <img class="popular__category-img" src="images/popular/category-6-desctop.jpg" srcset="images/popular/category-6-desctop@2x.jpg 2x" alt="Изображение категории" width="692" height="240">
+                  </picture>
+                </div>
+                <svg class="popular__link-icon" width="28" height="28" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-plus"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="interior">
+        <div class="container">
+          <h2 class="interior__title title">Интерьерный</h2>
+          <div class="interior__wrapper">
+            <div class="interior__left-col">
+              <picture>
+                <source media="(max-width: 767px)" srcset="images/interior/big-image-mobile.jpg, images/interior/big-image-mobile@2x.jpg 2x">
+                <source media="(max-width: 1023px)" srcset="images/interior/big-image-tablet.jpg, images/interior/big-image-tablet@2x.jpg 2x">
+                <img class="interior__img" src="images/interior/big-image-desctop.jpg" srcset="images/interior/big-image-desctop@2x.jpg 2x" alt="Изображение категории" width="900" height="748">
+              </picture>
+              <ul class="interior__list">
+                <li class="interior__item">
+                  <a class="circle-link" href="#" aria-label="Открыть товар">
+                    <svg class="circle-link__icon" width="20" height="20" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-plus"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="interior__item">
+                  <a class="circle-link" href="#" aria-label="Открыть товар">
+                    <svg class="circle-link__icon" width="20" height="20" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-plus"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="interior__item">
+                  <a class="circle-link" href="#" aria-label="Открыть товар">
+                    <svg class="circle-link__icon" width="20" height="20" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-plus"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="interior__item">
+                  <a class="circle-link" href="#" aria-label="Открыть товар">
+                    <svg class="circle-link__icon" width="20" height="20" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-plus"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="interior__right-col">
+              <ul class="interior__products">
+                <li class="interior__products-item">
+                  <div class="product-card">
+                    <picture class="product-card__wrap">
+                      <source media="(max-width: 767px)" srcset="images/interior/card-1-mobile.png, images/interior/card-1-mobile@2x.png 2x">
+                      <source media="(max-width: 1023px)" srcset="images/interior/card-1-tablet.png, images/interior/card-1-tablet@2x.png 2x">
+                      <img class="product-card__img" src="images/interior/card-1-desctop.png" srcset="images/interior/card-1-desctop@2x.png 2x" alt="Изображение товара" width="212" height="240">
+                    </picture>
+                    <div class="product-card__inner">
+                      <h3 class="product-card__title">Кресло wood</h3>
+                      <span class="product-card__price">6 150 руб.</span>
+                    </div>
+                    <a class="product-card__link" href="#">Подробнее</a>
+                  </div>
+                </li>
+                <li class="interior__products-item">
+                  <div class="product-card">
+                    <picture class="product-card__wrap">
+                      <source media="(max-width: 767px)" srcset="images/interior/card-2-mobile.png, images/interior/card-2-mobile@2x.png 2x">
+                      <source media="(max-width: 1023px)" srcset="images/interior/card-2-tablet.png, images/interior/card-2-tablet@2x.png 2x">
+                      <img class="product-card__img" src="images/interior/card-2-desctop.png" srcset="images/interior/card-2-desctop@2x.png 2x" alt="Изображение товара" width="212" height="240">
+                    </picture>
+                    <div class="product-card__inner">
+                      <h3 class="product-card__title">торшер wood</h3>
+                      <span class="product-card__price">1 200 руб.</span>
+                    </div>
+                    <a class="product-card__link" href="#">Подробнее</a>
+                  </div>
+                </li>
+                <li class="interior__products-item">
+                  <div class="product-card">
+                    <picture class="product-card__wrap">
+                      <source media="(max-width: 767px)" srcset="images/interior/card-3-mobile.png, images/interior/card-3-mobile@2x.png 2x">
+                      <source media="(max-width: 1023px)" srcset="images/interior/card-3-tablet.png, images/interior/card-3-tablet@2x.png 2x">
+                      <img class="product-card__img" src="images/interior/card-3-desctop.png" srcset="images/interior/card-3-desctop@2x.png 2x" alt="Изображение товара" width="212" height="240">
+                    </picture>
+                    <div class="product-card__inner">
+                      <h3 class="product-card__title">комод wood</h3>
+                      <span class="product-card__price">4 470 руб.</span>
+                    </div>
+                    <a class="product-card__link" href="#">Подробнее</a>
+                  </div>
+                </li>
+                <li class="interior__products-item">
+                  <div class="product-card">
+                    <picture class="product-card__wrap">
+                      <source media="(max-width: 767px)" srcset="images/interior/card-4-mobile.png, images/interior/card-4-mobile@2x.png 2x">
+                      <source media="(max-width: 1023px)" srcset="images/interior/card-4-tablet.png, images/interior/card-4-tablet@2x.png 2x">
+                      <img class="product-card__img" src="images/interior/card-4-desctop.png" srcset="images/interior/card-4-desctop@2x.png 2x" alt="Изображение товара" width="212" height="240">
+                    </picture>
+                    <div class="product-card__inner">
+                      <h3 class="product-card__title">тумба wood</h3>
+                      <span class="product-card__price">2 600 руб.</span>
+                    </div>
+                    <a class="product-card__link" href="#">Подробнее</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="help">
+        <div class="container">
+          <div class="help__wrapper">
+            <h2 class="help__title">Помощь в выборе товаров</h2>
+            <span class="help__subtitle">Получите бесплатную консультацию менеджера</span>
+            <form class="help__form" action="#" method="post">
+              <div class="custom-input">
+                <label class="custom-input__label" for="help-form-name">Имя</label>
+                <input class="custom-input__field" id="help-form-name" name="help-form-name" type="text" placeholder="Имя" required>
+                <span class="custom-input__error-message">Поле обязательно для заполнения</span>
+              </div>
+              <div class="custom-input">
+                <label class="custom-input__label" for="help-form-phone">Телефон</label>
+                <input class="custom-input__field" id="help-form-phone" name="help-form-phone" type="tel" placeholder="+7 (___) ___-__-__" required>
+                <span class="custom-input__error-message">Поле обязательно для заполнения</span>
+              </div>
+              <button class="help__form-btn btn btn--dark" type="submit">Отправить</button>
+            </form>
+            <p class="privacy">Нажимая на&nbsp;кнопку &laquo;Отправить&raquo;, я&nbsp;соглашаюсь с&nbsp;условиями <a class="privacy__link" href="#">Политики конфиденциальности</a></p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content-block">
+          <div class="footer__nav-block">
+            <div class="footer__nav">
+              <p class="footer__title">Покупателям</p>
+              <ul class="footer__nav-list">
+                <li class="footer__nav-item">
+                  <a class="footer__nav-link" href="#">Как сделать заказ</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a class="footer__nav-link" href="#">Доставка</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a class="footer__nav-link" href="#">Оплата</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a class="footer__nav-link" href="#">Каталог</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a class="footer__nav-link" href="#">Коллекции</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a class="footer__nav-link" href="#">Отзывы </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__nav">
+              <p class="footer__title">О houzzy</p>
+              <ul class="footer__nav-list">
+                <li class="footer__nav-item">
+                  <a class="footer__nav-link" href="#">О компании</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a class="footer__nav-link" href="#">Сотрудничество</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a class="footer__nav-link" href="#">Вакансии</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a class="footer__nav-link" href="#">События</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a class="footer__nav-link" href="#">Контакты</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a class="footer__nav-link" href="#">Реквизиты</a>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+          <div class="footer__contacts">
+            <p class="footer__title">Контактная информация</p>
+            <div class="footer__address">
+              <span class="footer__text">г. Красноярск, ул. Декабристов 19а</span>
+              <a class="footer__link" href="tel:88000000000">8 (800) 000-00-00</a>
+            </div>
+            <ul class="social">
+              <li class="social__item">
+                <a class="social__link" href="#" aria-label="Ссылка на Whatsapp">
+                  <svg class="social__link-icon" width="24" height="24" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-wa"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#" aria-label="Ссылка на Телеграм">
+                  <svg class="social__link-icon" width="24" height="24" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-tg"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#" aria-label="Ссылка на ВК">
+                  <svg class="social__link-icon" width="24" height="24" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#" aria-label="Ссылка на YouTube">
+                  <svg class="social__link-icon" width="24" height="24" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-yt"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__legal-block">
+          <div class="footer__legal-inner">
+            <a class="footer__legal-link" href="#">Пользовательское соглашение и&nbsp;условия</a>
+            <p class="footer__legal-text">&copy;&nbsp;Houzzy, 2024. Информация на&nbsp;сайте не&nbsp;является офертой и&nbsp;носит информационный характер</p>
+            <a class="footer__legal-link" href="#">Обработка персональных данных</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>

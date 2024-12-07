@@ -1,0 +1,141 @@
+.interior {
+    @include block-margin;
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 64.3% 31.4%;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 4.3%;
+
+        @media (max-width: 1440px) {
+            gap: 15px;
+            justify-content: flex-start;
+        }
+
+        @media (max-width: 1270px) {
+            grid-template-columns: 55% 40%;
+        }
+
+        @include vp-1023 {
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+
+        @include vp-767 {
+            gap: 30px;
+        }
+    }
+
+    &__left-col {
+        position: relative;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    &__item {
+        position: absolute;
+
+        &:nth-child(1) {
+            top: 27.8%;
+            right: 17%;
+
+            @include vp-1023 {
+                top: 27.4%;
+                right: 21.2%;
+            }
+
+            @include vp-767 {
+                top: 26%;
+                right: 16.3%;
+            }
+        }
+
+        &:nth-child(2) {
+            right: 25%;
+            bottom: 28.5%;
+
+            @include vp-1023 {
+                right: 28.2%;
+                bottom: 26%;
+            }
+
+            @include vp-767 {
+                right: 23%;
+                bottom: 25%;
+            }
+        }
+
+        &:nth-child(3) {
+            right: 44%;
+            bottom: 24.2%;
+
+            @include vp-1023 {
+                right: 44.2%;
+                bottom: 22.6%;
+            }
+
+            @include vp-767 {
+                right: 43.6%;
+                bottom: 21%;
+            }
+        }
+
+        &:nth-child(4) {
+            bottom: 34.1%;
+            left: 8.7%;
+
+            @include vp-1023 {
+                bottom: 32.2%;
+                left: 13.8%;
+            }
+
+            @include vp-767 {
+                bottom: 31%;
+                left: 7.5%;
+            }
+        }
+    }
+
+    &__products {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px 16px;
+
+        @media (max-width: 1306px) {
+            gap: 15px 10px;
+        }
+
+        // @media (max-width: 1300px) {
+        //     grid-template-columns: 1fr;
+        // }
+
+        @include vp-1023 {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px 12px;
+        }
+
+        @include vp-767 {
+            gap: 20px 14px;
+        }
+
+        &-item {
+            max-width: 212px;
+            @media (max-width: 1300px) {
+                max-width: 100%;
+            }
+        }
+    }
+}

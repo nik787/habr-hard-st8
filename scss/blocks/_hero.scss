@@ -1,0 +1,90 @@
+.hero {
+    position: relative;
+    @include block-margin;
+    margin-top: 72px;
+
+    @include vp-1023 {
+        margin-top: 72px;
+    }
+
+    @include vp-767 {
+        margin-top: 60px;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__list {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    &__item {
+        position: absolute;
+
+        &:nth-child(1) {
+            top: 13.9%;
+            right: 39.5%;
+
+            @include vp-1023 {
+                top: 15.1%;
+                right: 35.7%;
+            }
+
+            @include vp-767 {
+                top: 30%;
+                right: 32%;
+            }
+        }
+
+        &:nth-child(2) {
+            bottom: 21.3%;
+            right: 27.7%;
+
+            @include vp-1023 {
+                bottom: 31.7%;
+                right: 21.2%;
+            }
+
+            @include vp-767 {
+                bottom: 25.4%;
+                right: 17%;
+            }
+        }
+
+        &:nth-child(3) {
+            bottom: 17.6%;
+            right: 46.8%;
+
+            @include vp-1023 {
+                bottom: 30.5%;
+                right: 45.8%;
+            }
+
+            @include vp-767 {
+                bottom: 25.2%;
+                right: 41.4%;
+            }
+        }
+
+        &:nth-child(4) {
+            bottom: 15%;
+            left: 17.6%;
+
+            @include vp-1023 {
+                bottom: 29.7%;
+                left: 8.1%;
+            }
+
+            @include vp-767 {
+                bottom: 23.5%;
+                left: 10%;
+            }
+        }
+    }
+
+    
+}
+
